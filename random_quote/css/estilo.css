@@ -1,0 +1,36 @@
+body{
+  background:url("https://wallpaperscraft.com/image/star_art_sky_night_people_silhouette_98142_1920x1080.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+margin-top:60px;
+font-family:Impact, Charcoal, sans-serif;  
+}
+.center{
+  display:table;
+  margin:0 auto;
+  color:white;
+    background:rgba(255,255,255,0.3);
+  padding:30px;
+  height:100%;
+}
+
+h3{
+  font-size:24px;
+  color:black;
+}
+#btn_quote{
+  margin-right:20px;
+  color:black;
+}
+q{
+  color:black;
+  display:block;
+  font-size:25px;
+}
+button{
+  display:block;
+}
+p{
+  color:black;
+  font-size:20px;
+}
