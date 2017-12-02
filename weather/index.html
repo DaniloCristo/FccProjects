@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+		<head>
+			<meta charset="utf-8" />
+			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+			<meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+			<title>Current Weather</title>
+
+			<!-- estilos -->
+			<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+			<link rel="stylesheet" href="css/estilo.css" />
+
+			<!-- scripts -->
+			<script src="js/jquery.js"></script>
+		</head>
+		<body>
+			<div class="container">
+  				<div id="weather">
+  					<div class="row">
+  						<h1 class="text-center">Current Weather</h1>
+  						<div class="col-sm-6">
+  							<img id ="icon" src="imagens/weather.png" class="img-responsive" />
+  						</div>	
+  						
+  						<div class="col-sm-6">
+		  					<div id="currentWeather">
+
+							    <h2 id="cidade">Carregando o clima..</h2>
+							    <h3 id="temperatura"></h3>
+							    <p id="main"></p>
+							    <p id="desc"> </p>
+							    
+							    <button class="btn" id="fahrenheit">Fahrenheit</button> <button class="btn" id="celsius">Celsius</button>
+		  					</div>
+		  				</div>	<!-- fim da segunda coluna -->
+  					</div><!-- fim da row -->
+  				</div><!-- fim da div de weather -->
+			</div><!-- fim do container -->
+
+			<script src="bootstrap/js/bootstrap.min.js"></script>
+			<script src="js/main.js"></script>
+		</body>
+	</html>

@@ -1,0 +1,25 @@
+body{
+  background:#4682B4;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+h1{
+	font-size:50px;
+}
+#weather{
+  display:table;
+  margin:0 auto;
+  padding-top:130px;
+  padding-bottom:200px;
+}
+#currentWeather{
+  background:rgba(255,255,255,0.5);
+  padding:30px;
+  
+}
+
+@media screen and (max-width:767px ){
+	h1{
+		font-size:35px;
+	}
+}
