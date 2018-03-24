@@ -1,0 +1,74 @@
+{
+	"Math":[
+		{
+			"Pergunta": "-2 + 5",
+			"Resposta": "3",
+			"Categoria":"Aritmetica com sinal negativo"
+		},
+
+		{
+			"Pergunta":"-3 * -4",
+			"Resposta":"12",
+			"Categoria":"Aritmetica com sinal negativo"
+		},
+
+		{
+			"Pergunta":"12 / 4 ( 12 dividido por 4)",
+			"Resposta":"3",
+			"Categoria":"Arimetica basica"
+		},
+
+		{
+			"Pergunta":"Ache o valor de x : 3 * x + 4 = 19 ",
+			"Resposta":"5",
+			"Categoria":"Pré-Algebra"
+		},
+
+		{
+			"Pergunta":"13 * 3",
+			"Resposta":"39",
+			"Categoria":"Aritmetica basica"
+		},
+
+		{
+			"Pergunta":"Ache o valor de Y : 43 - y = 40",
+			"Resposta":"3",
+			"Categoria":"Pré-Algebra"
+		},
+
+		{
+			"Pergunta":"Ache o valor de b: 3 * b = 9",
+			"Resposta":"3",
+			"Categoria":"Pré-Algebra"
+		},
+
+		{
+			"Pergunta":"4 - 10",
+			"Resposta":"-6",
+			"Categoria":"Aritmetica com sinal negativo"
+		},
+
+		{
+			"Pergunta":"20 + x = 15",
+			"Resposta":"-5",
+			"Categoria":"Pré-Algebra"
+		},
+		{
+			"Pergunta":"33 + 3",
+			"Resposta":"36",
+			"Categoria":"Aritmetica basica"
+		},
+		{
+			"Pergunta":"30 / 3",
+			"Resposta":"10",
+			"Categoria":"Aritmetica basica"
+		},
+		{
+			"Pergunta":"-4 - 10",
+			"Resposta":"-10",
+			"Categoria":"Arimetica com sinal negativo"
+		}
+
+	]
+
+}
