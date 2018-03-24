@@ -18,6 +18,8 @@ $(document).ready(function(){
 					//aumentando o contador das perguntas
 					i++
 					acertos++;
+					//limpando o input
+					$("#resposta").val("");
 					//alterando seus acertos 
 					qtdPerguntas = acertos + "/" + data.Math.length;
 					$("#pontuacao").html(qtdPerguntas);
