@@ -1,6 +1,22 @@
 $(document).ready(function(){
-
-	$.getJSON("https://api.myjson.com/bins/1et5on",function(data){
+	//função que vai receber uma array e um valor e verficar se o valor contem no array
+	function in_array(arr,value){
+		let igual = false;
+		//loop em cada item do array
+		for(let i = 0; i < arr.length; i++){
+			//caso ache uma igualdade deixa a variavel true
+			if(arr[i] === value){
+				igual = true;
+			}
+		}
+		//caso em nenhum momento a variavel tenha se tornado true ( caso nenhum item do array foi igual ao valor passado )
+		if(!igual){
+			//colocar o determinado valor dentro do array
+			arr.push(value);
+		}
+	}
+	//pegando o json
+	$.getJSON("https://api.myjson.com/bins/1b4ai7",function(data){
 		let acertos = 0;
 		let erros = 0;
 		//pegar os erros cometidos pela sua categoria
@@ -39,14 +55,21 @@ $(document).ready(function(){
 					//caso erre a resposta
 					$("#errou").html("Resposta incorreta");
 					//populando o array com a categoria do erro (uma vez apenas)
-					if($.inArray(data.Math[i].Categoria,errosCategoria)){
-						errosCategoria.push(data.Math[i].Categoria);
-					}
+					in_array(errosCategoria, data.Math[i].Categoria);
 				}
 
 
 				if(acertos == 12){
 					alert("Parabéns, você compĺetou o quiz");
+					//exibindo botão de diagnostico após terminar o quiz
+					$("#diagnostico").show();
+					//criando uma listagem com as categorias dos erros cometidos
+					let lista = "<ul class='list-group'>";
+					for(let i = 0; i < errosCategoria.length; i ++){
+						lista += "<li class='list-group-item'>"+errosCategoria[i]+"</li>";
+					}
+					lista += "</ul>";
+					$("#lista").html(lista);
 				}
 
 			});
@@ -54,4 +77,5 @@ $(document).ready(function(){
 	});
 
 });
+
 

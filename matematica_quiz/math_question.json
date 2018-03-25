@@ -15,7 +15,7 @@
 		{
 			"Pergunta":"12 / 4 ( 12 dividido por 4)",
 			"Resposta":"3",
-			"Categoria":"Arimetica basica"
+			"Categoria":"Aritmetica basica"
 		},
 
 		{
@@ -66,7 +66,7 @@
 		{
 			"Pergunta":"-4 - 10",
 			"Resposta":"-14",
-			"Categoria":"Arimetica com sinal negativo"
+			"Categoria":"Aritmetica com sinal negativo"
 		}
 
 	]

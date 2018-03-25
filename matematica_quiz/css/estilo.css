@@ -9,3 +9,7 @@
 #errou{
 	color:rgb(255,0,0);
 }
+
+#diagnostico{
+	display: none;
+}
