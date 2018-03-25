@@ -1,7 +1,10 @@
 $(document).ready(function(){
 
-	$.getJSON("https://api.myjson.com/bins/n8sdj",function(data){
+	$.getJSON("https://api.myjson.com/bins/1et5on",function(data){
 		let acertos = 0;
+		let erros = 0;
+		//pegar os erros cometidos pela sua categoria
+		let errosCategoria = Array();
 		//quantidade de perguntas
 		let qtdPerguntas = acertos + "/" + data.Math.length;
 		$("#pontuacao").html(qtdPerguntas);
@@ -13,11 +16,12 @@ $(document).ready(function(){
 		$("#checar").click(function(){
 				
 				let input = $("#resposta").val();
-				console.log(i);
+				console.log(errosCategoria);
 				if(input == data.Math[i].Resposta){
 					//aumentando o contador das perguntas
 					i++
 					acertos++;
+					$("#errou").html("");
 					//limpando o input
 					$("#resposta").val("");
 					//alterando seus acertos 
@@ -31,8 +35,15 @@ $(document).ready(function(){
 					}
 					
 				}else if (input !== data.Math[i].Resposta){
-					alert("Você errou, tente novamente");
+					erros++
+					//caso erre a resposta
+					$("#errou").html("Resposta incorreta");
+					//populando o array com a categoria do erro (uma vez apenas)
+					if($.inArray(data.Math[i].Categoria,errosCategoria)){
+						errosCategoria.push(data.Math[i].Categoria);
+					}
 				}
+
 
 				if(acertos == 12){
 					alert("Parabéns, você compĺetou o quiz");
