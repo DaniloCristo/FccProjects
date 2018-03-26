@@ -1,0 +1,23 @@
+body{
+	background-image:url("../img/calc.jpg");
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+
+#calc{
+	display:table;
+	margin:0 auto;
+}
+#calc p{
+	cursor:pointer;
+}
+#display{
+	margin-top:150px;
+	background:rgba(255,255,255,0.8);
+	padding:20px 40px 10px 30px;
+}
+
+#result{
+	padding-bottom:10px;
+}
