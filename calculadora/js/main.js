@@ -1,5 +1,19 @@
 $(document).ready(function(){
+	
 	let val = "";
+	let n1 = 0;
+	let n2 = 0;
+	let result = 0;
+	let operacao;
+	//funções das operações
+	function somar(n1,n2){
+		return n1 + n2;
+	}
+	function sub(n1,n2){
+		return n1 - n2
+	}
+
+	//capturando o clique dos numeros
 	$("#9").click(function(){
 		val += "9" 
 		$("#num").val(val);
@@ -44,4 +58,36 @@ $(document).ready(function(){
 		val += ".";
 		$("#num").val(val);
 	});
+
+	//clique do botão de somar
+	$("#somar").click(function(){
+		operacao = 1;
+		val = ""
+		n1 += parseInt($("#num").val())
+		$("#num").val("");
+	});
+
+	//clique no botão de subtração
+	$("#subtrair").click(function(){
+		operacao = 2
+		val = "";
+		n1 += parseInt($("#num").val());
+		$("#num").val("");
+	});
+
+	$("#resultado").click(function(){
+		n2 = parseInt($("#num").val());
+		switch(operacao){
+			case 1:
+				result = somar(n1,n2)
+				break;
+			case 2:
+				result = sub(n1,n2)
+				break;	
+		}
+		$("#num").val(result);
+	});
+
+	
+
 });

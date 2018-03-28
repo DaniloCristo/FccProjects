@@ -1,8 +1,8 @@
+body,html{
+	height:100%;
+}
 body{
-	background-image:url("../img/calc.jpg");
-	background-size:100%;
-	background-repeat:no-repeat;
-	background-attachment:fixed;
+	background-color:rgb(56,250,170);
 }
 
 #calc{
