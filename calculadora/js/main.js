@@ -80,6 +80,7 @@ $(document).ready(function(){
 		operacao = 1;
 		val = ""
 		n1 += parseFloat($("#num").val())
+		$("#resultado_parcial").text(n1);
 		$("#num").val("");
 	});
 
@@ -88,6 +89,7 @@ $(document).ready(function(){
 		operacao = 2
 		val = "";
 		n1 += parseFloat($("#num").val());
+		$("#resultado_parcial").text(n1);
 		$("#num").val("");
 	});
 	//mutiplicação
@@ -95,6 +97,7 @@ $(document).ready(function(){
 		operacao = 3
 		val = "";
 		n1 += parseFloat($("#num").val())
+		$("#resultado_parcial").text(n1);
 		$("#num").val("");
 	});
 	//divisão
@@ -102,6 +105,7 @@ $(document).ready(function(){
 		operacao = 4;
 		val = ""
 		n1 += parseFloat($("#num").val())
+		$("#resultado_parcial").text(n1);
 		$("#num").val("");
 	});
 	//potenciação
@@ -109,6 +113,7 @@ $(document).ready(function(){
 		operacao = 5
 		val = ""
 		n1 += parseFloat($("#num").val())
+		$("#resultado_parcial").text(n1);
 		$("#num").val("")
 	});
 
@@ -116,7 +121,6 @@ $(document).ready(function(){
 		val = "";
 		n1 = parseFloat($("#num").val()); 
 		result = sqrt(n1)
-		console.log(result)
 		$("#num").val(result);
 	});
 
@@ -140,6 +144,7 @@ $(document).ready(function(){
 				result = potencia(n1,n2);
 				break;				
 		}
+		$("#resultado_parcial").text("...");
 		$("#num").val(result);
 	});
 
