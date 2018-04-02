@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+		<head>
+			<meta charset="utf-8" />
+
+			<title>Gerar pdf</title>
+			<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+			<style type="text/css">
+				p{
+					font-size:30px;
+				}
+				div{
+					margin-top:30px;
+				}
+
+			</style>
+			
+			<script src="js/jquery.js"></script>
+		</head>
+
+		<body>
+			<div class="container">
+				<div class="form-group">
+					<label>Qual palavra deseja gerar:
+						<input type="text" class="form-control" id="nome" placeholder="Palavra">
+					</label>
+					<button id="gerarhtml" class="btn" type="button">Gerar exibição</button>	
+				</div>		
+				<button id="genPdf" class="btn btn-primary" type="button">Ok</button>
+			</div>
+			<div class="container" id="pdf">
+				<div id="pdfAqui">
+					
+				</div>
+			</div>
+
+			<script src="jspdf/dist/jspdf.min.js"></script>
+			<script src="js/main.js"></script>
+		</body>
+
+	</html>
