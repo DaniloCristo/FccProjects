@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+		<head>
+			<meta charset="utf-8" />
+			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+			<meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no" />
+
+			<title>Converter minutos para horas</title>
+			
+			<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+			<link rel="stylesheet" href="css/estilo.css" />
+
+			<!-- jquery -->
+			<script src="js/jquery.js"></script>
+		</head>
+		<body>
+
+			<nav class="navbar navbar-expand-lg navbar-light navbar_cor">
+				<div class="container">
+					<a href="#" class="navbar-brand">Converter minutos para horas</a>
+				</div>
+			</nav>
+			<section id="inputs">
+				<div class="container">
+					<div class="row">
+						<div class="form-group">
+							<label>
+								<input type="text" class="form-control" id="minutos" placeholder="Digite os minutos"/>
+							</label>
+						</div>
+					</div>
+					<button id="converter" type="button" class="btn btn_fundo">Converter</button>
+					
+					<div class="row">
+						<label>Horas:
+							<input id="horas" readonly="true" class="form-control" />
+						</label>
+						<label>Minutos:
+							<input id="minutos_restantes" readonly="true" class="form-control" />
+						</label>
+					</div>	
+				</div>
+			</section>
+
+			<script src="bootstrap/js/bootstrap.min.js"></script>
+			<script src="js/main.js"></script>
+		</body>
+	</html>

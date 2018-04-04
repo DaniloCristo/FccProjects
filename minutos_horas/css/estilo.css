@@ -1,0 +1,21 @@
+body{
+	font-family:Times New Roman;
+}
+
+.navbar_cor{
+	background:rgba(139, 175, 234);
+}
+
+#inputs{
+	margin-top:60px;
+}
+.btn_fundo{
+	background:rgba(129, 225, 227, 0.4);
+}
+.btn_fundo:hover{
+	background:rgba(129, 225, 227, 1);
+	transition:all 0.6s;
+}
+input{
+	margin-left:10px;
+}
