@@ -1,6 +1,9 @@
 document.getElementById("converter").addEventListener('click', function(){
     //pegando o input do usuario
     let min = document.getElementById("minutos").value;
+    if(min < 0){
+    	min = 0;
+    }
     //pegando as horas
     hours = Math.floor(min/60);
     //pegando os minutos restantes
