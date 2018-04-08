@@ -5,7 +5,7 @@
 			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 			<meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no" />
 
-			<title>Minutos</title>
+			<title>Dias</title>
 			
 			<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 			<link rel="stylesheet" href="css/estilo.css" />
@@ -15,6 +15,7 @@
 		</head>
 		<body>
 
+			
 			<nav class="navbar navbar-expand-lg navbar-light navbar_cor">
 				<div class="container">
 					<a href="#" class="navbar-brand">Conversor</a>
@@ -41,22 +42,28 @@
 				<div class="container">
 					<div class="row">
 						<div class="form-group">
-							<label>Quantidade de minutos para a conversão:
-								<input type="number" class="form-control" id="minutos" placeholder="Digite o(s) minuto(s)"/>
+							<label>Digite a quantidade de dias que deseja converter:
+								<input type="number" class="form-control" id="dias" placeholder="Digite o(s) dia(s)"/>
 							</label>
 						</div>
 					</div>
 					<button id="converter" type="button" class="btn btn_fundo">Converter</button>
 					
 					<div class="row">
+						<label>Horas:
+							<input id="horas" readonly="true" class="form-control" />
+						</label>
+						<label>Minutos:
+							<input id="minutos" readonly="true" class="form-control" />
+						</label>
 						<label>Segundos:
-							<input id="segundosConvertidos" readonly="true" class="form-control" />
+							<input type="text" id="segundos" readonly="true" class="form-control">
 						</label>
 					</div>	
 				</div>
 			</section>
 
 			<script src="bootstrap/js/bootstrap.min.js"></script>
-			<script src="js/segundos.js"></script>
+			<script src="js/dias.js"></script>
 		</body>
 	</html>
