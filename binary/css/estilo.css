@@ -1,0 +1,9 @@
+body,html{
+	font-family: Times New Roman; 
+}
+.navbar-cor{
+	background-color:#b6fcd5;
+}
+#conteudo_principal{
+	margin-top:40px;
+}
