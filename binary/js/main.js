@@ -1,6 +1,6 @@
 document.getElementById("converter").addEventListener("click",function(){
 	// pegando o input do usuario ( valor decimal )
-	let input = document.getElementById("decimal").value
+	let input = parseFloat(document.getElementById("decimal").value)
 	// separando a parte inteira e a decimal
 	let i = parseInt(input)
 	let d = input - i
