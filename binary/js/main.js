@@ -3,10 +3,10 @@ document.getElementById("converter").addEventListener("click",function(){
 	let input = document.getElementById("decimal").value
 	// separando a parte inteira e a decimal
 	let i = parseInt(input)
-	let d = input - i
-
+	let d = parseFloat(input) - i
 	parteInteira = intToBinary(i)
 	parteDecimal = decimalToBinary(d)
+	//usando o ponto para separar a parte decimal da parte inteira
 	result = parteInteira + "." + parteDecimal
 	document.getElementById("resultado_binario").value = result
 });
