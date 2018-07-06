@@ -8,7 +8,7 @@ function chooseName(nomes){
 	retorna: um nome aleatorio
 	*/
 	maximo = nomes.length - 1
-	return nomes[Math.ceil(Math.random() * maximo)]
+	return nomes[Math.ceil(Math.random() * maximo)].toLowerCase()
 }
 
 function is_in(str,arr){
@@ -57,6 +57,22 @@ function isWordGuessed(lettersGuessed, secretWord){
 	return true
 }
 
+function showAvailableLetters(lettersGuessed,letras_disponiveis){
+	/*
+	lettersGuessed: letras ja arriscadas
+	letras_disponiveis: letras que ainda não foram arriscadas
+	retorna letras_disponiveis retirando as letras que estiverem em lettersGuessed
+	*/
+	temp = letras_disponiveis.split("")
+	for(let i = 0; i<lettersGuessed.length; i++){
+		index = temp.indexOf(lettersGuessed[i])
+		if(index != -1){
+			temp.splice(index,1)
+		}
+	}
+	return temp.join("")
+}
+
 //definindo variaveis padrões
 //letras que ja foram arriscadas
 let lettersGuessed = []
@@ -67,10 +83,12 @@ console.log(secretWord)
 // o que ainda falta descobrir
 document.getElementById("secretWord").innerHTML = palavrasJaDitas(lettersGuessed,secretWord)
 document.getElementById("letras_disponiveis").innerHTML = letras_disponiveis
-
+document.getElementById("qtd_letras").innerHTML = "Estou pensando em um nome que tem: " + secretWord.length + " letras"
 //evento do botão
 document.getElementById("arriscar").addEventListener("click",function(){
+	//recebendo o input do usuario e convertendo para letra minuscula
 	input = document.getElementById("input_user").value
+	input = input.toLowerCase()
 	if(is_in(input,lettersGuessed) == false){
 		lettersGuessed.push(input)
 	}
@@ -78,5 +96,7 @@ document.getElementById("arriscar").addEventListener("click",function(){
 		alert("Você venceu!")
 	}
 	document.getElementById("secretWord").innerHTML = palavrasJaDitas(lettersGuessed,secretWord)
-
+	document.getElementById("letras_disponiveis").innerHTML = showAvailableLetters(lettersGuessed,letras_disponiveis)
 });
+
+//console.log(showAvailableLetters(["a","b","c","e"],letras_disponiveis))
