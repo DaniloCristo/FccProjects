@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+	<!-- bootstrap css  -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+	<title>Jogo da forca</title>
+
+	<!-- css personalizado -->
+	<link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body>
+	<div id="intro">
+		<h2 class="">Jogo da forca</h2>
+		<p id="numero_tentativas">numero de tentativas: 8</p>
+		<img src="img/jogo-da-forca.png" class="img-responsive">
+		<h1 id="secretWord">_ _ _ _ _ _</h1>
+	</div>
+	<div class="container" id="jogo">
+		<h4>Letras disponiveis</h4>
+		<p id="letras_disponiveis">A – B – C – D – E – F – G – H – I – J – K – L – M – N – O – P – Q – R – S – T – U – V – W – X – Y – Z</p>
+		<p>Estou pensando em um nome que tem 5 letras</p>
+		<label>Digite uma letra
+			<input type="text" class="form-control" id="input_user" />
+		</label>
+		<button type="button" class="btn btn-primary">Arriscar</button>
+	</div>
+	
+	<div class="container">
+		<h4>Explicação sobre o jogo:</h4>
+		<p>
+			 jogo da forca é um jogo em que o jogador tem que acertar qual é a palavra proposta, tendo como dica o número de letras e o tema ligado à palavra. A cada letra errada, é desenhada uma parte do corpo do enforcado. O jogo termina ou com o acerto da palavra ou com o término do preenchimento das partes corpóreas do enforcado. <a target="_blank" href="https://pt.wikipedia.org/wiki/Jogo_da_forca " >Clique aqui para mais informações</a>
+		</p>
+	</div>
+
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
