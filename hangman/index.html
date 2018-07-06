@@ -17,19 +17,21 @@
 		<h2 class="">Jogo da forca</h2>
 		<p id="numero_tentativas">numero de tentativas: 8</p>
 		<img src="img/jogo-da-forca.png" class="img-responsive">
-		<h1 id="secretWord"></h1>
+		<h3 id="secretWord"></h3>
 	</div>
 	<div class="container" id="jogo">
 		<h4>Letras disponiveis</h4>
+		<p id="mensagem"></p>
 		<h3 id="letras_disponiveis"></h3>
 		<p id="qtd_letras"></p>
 		<label>Digite uma letra
-			<input type="text" maxlength="1" class="form-control" id="input_user" />
+			<input type="text" placeholder="Digite uma letra" maxlength="1" class="form-control" id="input_user" />
 		</label>
+		<br>
 		<button type="button" id="arriscar" class="btn btn-primary">Arriscar</button>
 	</div>
 	
-	<div class="container">
+	<div id="explicacao" class="container">
 		<h4>Explicação sobre o jogo:</h4>
 		<p>
 			 jogo da forca é um jogo em que o jogador tem que acertar qual é a palavra proposta, tendo como dica o número de letras e o tema ligado à palavra. A cada letra errada, é desenhada uma parte do corpo do enforcado. O jogo termina ou com o acerto da palavra ou com o término do preenchimento das partes corpóreas do enforcado. <a target="_blank" href="https://pt.wikipedia.org/wiki/Jogo_da_forca " >Clique aqui para mais informações</a>
