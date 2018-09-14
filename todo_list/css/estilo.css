@@ -1,0 +1,11 @@
+.navbar-cor{
+	background:rgba(100,200,100,0.5);
+}
+#campo_item{
+	display: table;
+	margin:20px auto 0 auto;
+}
+.deletar_item{
+	margin:5px;
+	float: right;
+}
