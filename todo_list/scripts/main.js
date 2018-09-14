@@ -7,6 +7,10 @@ document.getElementById("btn_adicionar").addEventListener("click", function(){
 });
 
 function getIndex(){
+	/* 
+	pegar o index do elemento que esta no botão (atributo data_id-tem)
+	e chamar a função deletarItem(index) para deletar o item
+	*/
 	$(".deletar_item").click(function(){
 		let index = $(this).attr("data_id-item")
 		//console.log(index)
@@ -30,6 +34,9 @@ function criarVisualizacao(arr){
 }
 
 function deletarItem(index){
+	/*
+	deletar o item que se encontra no index escolhido
+	*/
 	items.splice(index,1)
 	criarVisualizacao(items)
 }
