@@ -3,6 +3,7 @@ document.getElementById("btn_adicionar").addEventListener("click", function(){
 	let item = document.getElementById("item").value
 	items.push(item)
 	criarVisualizacao(items)
+	document.getElementById("item").value = ""
 
 });
 
@@ -15,7 +16,6 @@ function getIndex(){
 		let index = $(this).attr("data_id-item")
 		//console.log(index)
 		deletarItem(index)
-		console.log(items)
 	});
 }	
 

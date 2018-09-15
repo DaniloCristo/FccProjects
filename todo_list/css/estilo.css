@@ -1,3 +1,6 @@
+body{
+	font-family: Helvetica;
+}
 .navbar-cor{
 	background:rgba(100,200,100,0.5);
 }
@@ -8,4 +11,13 @@
 .deletar_item{
 	margin:5px;
 	float: right;
+}
+
+@media only screen and (max-width: 600px){
+	#campo_item{
+		margin:10px;
+	}
+	#campo_item button{
+		display: block;
+	}	
 }
