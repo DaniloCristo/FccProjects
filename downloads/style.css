@@ -1,0 +1,25 @@
+body, html {
+	margin: 0;
+	height: 100%;
+}
+
+.container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.container .program {
+	flex: 30%;
+	margin: 10px 30px 10px 30px;
+}
+
+
+@media (max-width: 500px) {
+	h2{
+		font-size:15px;
+	}
+	p,a{
+		font-size: 12px; 
+	}
+}
